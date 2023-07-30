@@ -1,27 +1,16 @@
 Resolusi belajar web programming adalah komitmen untuk mengembangkan keterampilan dalam pengembangan web. Berikut adalah beberapa resolusi yang dapat membantu Anda dalam perjalanan belajar web programming:
 
-Mempelajari Dasar-dasar HTML, CSS, dan JavaScript: Mulailah dengan memahami dasar-dasar HTML untuk struktur halaman web, CSS untuk tampilan dan desain, serta JavaScript untuk interaktivitas.
-
-Mendalami Responsivitas: Pelajari tentang desain responsif agar website dapat menyesuaikan tampilannya dengan berbagai perangkat, seperti ponsel, tablet, dan desktop.
-
-Penggunaan Framework: Pilih dan pelajari framework web yang populer seperti Bootstrap, React, Angular, atau Vue.js untuk mempercepat pengembangan dan membangun proyek dengan lebih efisien.
-
-Belajar Backend Development: Perluas pengetahuan Anda dengan mempelajari bahasa pemrograman backend seperti Node.js, Python, Ruby, atau PHP. Pahami konsep server, database, dan pengembangan API.
-
-Version Control: Pelajari penggunaan Git untuk mengelola perubahan kode dan bekerja secara kolaboratif dengan tim pengembang.
-
-Keamanan Web: Pahami praktik keamanan web seperti sanitasi input, perlindungan dari serangan XSS dan SQL injection, dan implementasi HTTPS.
-
-Optimasi Kinerja: Pelajari teknik untuk meningkatkan kinerja situs web, seperti mengoptimalkan gambar, caching, dan kompresi sumber daya.
-
-Pengujian (Testing): Pelajari pengujian perangkat lunak untuk memastikan kualitas kode Anda dan meminimalkan kesalahan.
-
-Pengembangan Proyek: Buat proyek-proyek kecil hingga menengah untuk mengasah keterampilan Anda. Praktekkan apa yang telah Anda pelajari dalam situasi nyata.
-
-Mengikuti Komunitas: Bergabunglah dengan komunitas web developer, seperti forum online, grup media sosial, atau menghadiri acara meetup untuk berinteraksi dengan para ahli dan pembelajar lainnya.
-
-Belajar Terus-menerus: Dunia web development terus berkembang, jadi tetaplah terbuka untuk mempelajari teknologi baru dan tren terkini.
-
-Membangun Portofolio: Buat portofolio online untuk menampilkan proyek-proyek yang telah Anda kerjakan. Ini akan membantu Anda menarik perhatian calon pemberi kerja atau klien.
+1. Mempelajari Dasar-dasar HTML, CSS, dan JavaScript: Mulailah dengan memahami dasar-dasar HTML untuk struktur halaman web, CSS untuk tampilan dan desain, serta JavaScript untuk interaktivitas.
+2. Mendalami Responsivitas: Pelajari tentang desain responsif agar website dapat menyesuaikan tampilannya dengan berbagai perangkat, seperti ponsel, tablet, dan desktop.
+3. Penggunaan Framework: Pilih dan pelajari framework web yang populer seperti Bootstrap, React, Angular, atau Vue.js untuk mempercepat pengembangan dan membangun proyek dengan lebih efisien.
+4. Belajar Backend Development: Perluas pengetahuan Anda dengan mempelajari bahasa pemrograman backend seperti Node.js, Python, Ruby, atau PHP. Pahami konsep server, database, dan pengembangan API.
+5. Version Control: Pelajari penggunaan Git untuk mengelola perubahan kode dan bekerja secara kolaboratif dengan tim pengembang.
+6. Keamanan Web: Pahami praktik keamanan web seperti sanitasi input, perlindungan dari serangan XSS dan SQL injection, dan implementasi HTTPS.
+7. Optimasi Kinerja: Pelajari teknik untuk meningkatkan kinerja situs web, seperti mengoptimalkan gambar, caching, dan kompresi sumber daya.
+8. Pengujian (Testing): Pelajari pengujian perangkat lunak untuk memastikan kualitas kode Anda dan meminimalkan kesalahan.
+9. Pengembangan Proyek: Buat proyek-proyek kecil hingga menengah untuk mengasah keterampilan Anda. Praktekkan apa yang telah Anda pelajari dalam situasi nyata.
+10. Mengikuti Komunitas: Bergabunglah dengan komunitas web developer, seperti forum online, grup media sosial, atau menghadiri acara meetup untuk berinteraksi dengan para ahli dan pembelajar lainnya.
+11. Belajar Terus-menerus: Dunia web development terus berkembang, jadi tetaplah terbuka untuk mempelajari teknologi baru dan tren terkini.
+12. Membangun Portofolio: Buat portofolio online untuk menampilkan proyek-proyek yang telah Anda kerjakan. Ini akan membantu Anda menarik perhatian calon pemberi kerja atau klien.
 
 Ingatlah untuk mengatur tujuan yang realistis dan terukur, serta menjaga konsistensi dan dedikasi dalam proses belajar Anda. Semoga resolusi belajar web programming ini membantu Anda mencapai kesuksesan dalam karier sebagai seorang web developer. Selamat belajar dan semoga sukses!
