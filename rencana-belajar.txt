@@ -1,4 +1,4 @@
-Berikut adalah rencana belajar web programming yang dapat Anda ikuti untuk mencapai tujuan belajar Anda:
+Ini adalah rencana belajar yang dibuat oleh ChatGPT untuk menjadi seorang web programming. Ikuti rencana belajar web programming untuk mencapai tujuan belajar Anda:
 1. Mengenal Dasar-dasar Web Development:
 - Mulailah dengan memahami dasar-dasar HTML, CSS, dan JavaScript.
 - Pelajari struktur dasar HTML, gaya dan desain menggunakan CSS, serta interaktivitas dengan JavaScript.
