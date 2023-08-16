@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Belajar Table di HTML dan CSS</title>
+</head>
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1><a href="https://www.youtube.com/watch?v=Ay8BXbAmEYM&ab_channel=CodingDesign">Customer's Orders</a></h1>
+            <p>klik header untuk menemukan sumber video</p>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Customer</th>
+                        <th>Location</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80" alt="Stanley Lee">Stanley Lee</td>
+                        <td>Seoul</td>
+                        <td>Aug 10th, 2023</td>
+                        <td><p class="status delivered">Delivered</p></td>
+                        <td><strong>$128.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Jenifer Emily">Jenifer Emily</td>
+                        <td>Manhattan</td>
+                        <td>July 5th, 2022</td>
+                        <td><p class="status cancelled">Cancelled</p></td>
+                        <td><strong>$75.20</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Michael Dam">Michael Dam</td>
+                        <td>Osaka</td>
+                        <td>April 25th, 2023</td>
+                        <td><p class="status delivered">Delivered</p></td>
+                        <td><strong>$350.40</strong></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="https://images.unsplash.com/photo-1526218769555-7a8cced31a78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Alamsyah Putra">Alamsyah Putra</td>
+                        <td>Jakarta</td>
+                        <td>July 25th, 2023</td>
+                        <td><p class="status shipped">Shipped</p></td>
+                        <td><strong>$200.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="https://images.unsplash.com/photo-1595320778266-1914a5b39cd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Dinda Mahalini">Dinda Mahalini</td>
+                        <td>Surabaya</td>
+                        <td>Aug 1st, 2023</td>
+                        <td><p class="status shipped">Arrival at Destination - Indonesia Hub</p></td>
+                        <td><strong>$150.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><img src="https://images.unsplash.com/photo-1541823709867-1b206113eafd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Amanda Fanny">Amanda Fanny</td>
+                        <td>Kuala Lumpur</td>
+                        <td>July 25th, 2023</td>
+                        <td><p class="status shipped">Customs Clearance</p></td>
+                        <td><strong>$350.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80" alt="Salma Rungkad">Salma Rungkad</td>
+                        <td>Bangkok</td>
+                        <td>June 6th, 2023</td>
+                        <td><p class="status shipped">In Transit</p></td>
+                        <td><strong>$500.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><img src="https://images.unsplash.com/photo-1582133376331-2a1eafa16221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Maria Nguyen">Maria Nguyen</td>
+                        <td>Hanoi</td>
+                        <td>June 15th, 2023</td>
+                        <td><p class="status pending">Pending</p></td>
+                        <td><strong>$800.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80" alt="Salma Rungkad">Salma Rungkad</td>
+                        <td>Bangkok</td>
+                        <td>June 6th, 2023</td>
+                        <td><p class="status shipped">In Transit</p></td>
+                        <td><strong>$500.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><img src="https://images.unsplash.com/photo-1582133376331-2a1eafa16221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Maria Nguyen">Maria Nguyen</td>
+                        <td>Hanoi</td>
+                        <td>June 15th, 2023</td>
+                        <td><p class="status pending">Pending</p></td>
+                        <td><strong>$800.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80" alt="Salma Rungkad">Salma Rungkad</td>
+                        <td>Bangkok</td>
+                        <td>June 6th, 2023</td>
+                        <td><p class="status shipped">In Transit</p></td>
+                        <td><strong>$500.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><img src="https://images.unsplash.com/photo-1582133376331-2a1eafa16221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Maria Nguyen">Maria Nguyen</td>
+                        <td>Hanoi</td>
+                        <td>June 15th, 2023</td>
+                        <td><p class="status pending">Pending</p></td>
+                        <td><strong>$800.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80" alt="Salma Rungkad">Salma Rungkad</td>
+                        <td>Bangkok</td>
+                        <td>June 6th, 2023</td>
+                        <td><p class="status shipped">In Transit</p></td>
+                        <td><strong>$500.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><img src="https://images.unsplash.com/photo-1582133376331-2a1eafa16221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Maria Nguyen">Maria Nguyen</td>
+                        <td>Hanoi</td>
+                        <td>June 15th, 2023</td>
+                        <td><p class="status pending">Pending</p></td>
+                        <td><strong>$800.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80" alt="Salma Rungkad">Salma Rungkad</td>
+                        <td>Bangkok</td>
+                        <td>June 6th, 2023</td>
+                        <td><p class="status shipped">In Transit</p></td>
+                        <td><strong>$500.90</strong></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><img src="https://images.unsplash.com/photo-1582133376331-2a1eafa16221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Maria Nguyen">Maria Nguyen</td>
+                        <td>Hanoi</td>
+                        <td>June 15th, 2023</td>
+                        <td><p class="status pending">Pending</p></td>
+                        <td><strong>$800.90</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
