@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Judul utama -->
+  <title>Cara Mengambil Foto Dengan Ponsel Anda</title>
+  <link rel="stylesheet" href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ini adalah kontainer untuk semua konten di halaman web; kita membutuhkannya untuk menetapkan
+ properti CSS ke halaman menggunakan selektor kelas daripada elemen body -->
+
+  <div class="page">
+
+    <!-- ini menu yang ada di sebelah kiri sejauh ini -->
+    <nav class="menu">
+        <!-- kelas blok menu__item menunjukkan kontainer dengan item menu, sedangkan pemodifikasi menu__item_landscape menunjukkan tema titik (lanskap) -->
+      <div class="menu__item menu__item_theme_landscape">
+        <!-- tautan ke halaman situs web tentang lanskap dengan tagar # sebagai pengganti alamat untuk saat ini -->
+        <a href="#" class="menu__link menu__link_theme_landscape">Lanskap</a>
+        <!-- gambar yang melambangkan tema titik menu (lanskap); gambar akan muncul di sebelah tautan di masa mendatang saat kursor melayang di atasnya -->
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_landscape_hover.jpg" alt="" class="menu__picture menu__picture_theme_landscape">
+      </div>
+      <!-- ujung kontainer dengan titik menu; titik tiga lainnya diatur dengan cara yang sama -->
+      <div class="menu__item menu__item_theme_portrait">
+        <a href="#" class="menu__link menu__link_portrait">Potret</a>
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_portrait_hover.jpg" alt="" class="menu__picture menu__picture_theme_portrait">
+      </div>
+      <div class="menu__item menu__item_theme_viewpoint">
+        <a href="#" class="menu__link menu__link_viewpoint">Perspektif</a>
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_viewpoint_hover.jpg" alt="" class="menu__picture menu__picture_theme_viewpoint">
+      </div>
+      <div class="menu__item menu__item_theme_expression">
+        <a href="#" class="menu__link menu__link_expression">Ekspresi</a>
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_expression_hover.jpg" alt="" class="menu__picture menu__picture_theme_expression">
+      </div>
+    </nav>
+
+    <!-- area konten utama -->
+    <section class="content">
+
+      <!-- kontainer dengan teks halaman dan ilustrasi, diperlukan untuk mengelola properti umum konten -->
+      <div class="content__container">
+
+        <!-- kontainer dengan pengantar -->
+        <div class="content__head">
+
+          <!-- heading halaman memiliki tingkat pertama h1 -->
+          <!-- semua heading memiliki kelas "content__title" dan dibedakan oleh pemodifikasi; pemodifikasi _main-item menunjukkan heading untuk semua teks pada halaman -->
+          <h1 class="content__title content__title_item_main">Cerita Di Balik Gambar</h1>
+
+          <!-- paragraf normal dengan kelas "content__text" -->
+          <p class="content__text">
+            Gambar-gambar yang berisi elemen misterius akan mendorong audiens menjadi pemirsa aktif. Memecahkan masalah adalah daya tarik dari fotografi, apa pun perangkat atau lensa yang digunakan, bagi kebanyakan fotografer profesional. Audiens akan merasakan banyak pencapaian dan apresiasi yang luar biasa ketika berhasil menemukan pesan tersembunyi di dalam gambar Anda. Memetakan perjalanan yang melibatkan pikiran dan perasaan audiens dapat menjadi sesuatu yang menyenangkan, baik bagi Anda maupun para audiens.
+          </p>
+
+<!--sebuah kutipan diberikan kelas khusus "content__quote" sehingga selektor untuk kelas dapat digunakan untuk memberikan format yang sama ke semua kutipan -->
+          <p class="content__quote">
+            "Penglihatan adalah aksi tercepat yang bisa dilakukan oleh manusia, tapi di waktu yang 
+            sama, kita hanya dapat melihat satu buah objek."
+
+            <!-- tag span mengisolasi area paragraf yang menunjukkan sumber kutipan, dengan area tersebut diberi kelas "content__quote-origin" -->
+            <span class="content__quote-origin">Leonardo da Vinci, Sebuah Risalah tentang 
+              Lukisan</span>
+          </p>
+        </div>
+        <!-- ujung kontainer dengan pengantar -->
+
+        <!-- kontainer dengan bab pertama -->
+        <div class="content__item">
+
+          <!-- nama bab, bagian — heading tingkat kedua h2, semuanya diberi kelas umum "content__title_sub-item" -->
+          <h2 class="content__title content__title_item_sub">Mengendalikan Arah Pandangan</h2>
+
+          <!-- nama subbagian adalah heading tingkat ketiga h3; semuanya diberi kelas umum "content__title_method-name"; perhatikan sintaksis pemodifikasi dengan kata method (metode) dan name (nama): garis bawah tunggal sebelum nama dan tanda hubung di antara dua bagian nama _method-name -->
+          <h3 class="content__title content__title_item_method">Pembingkaian</h3>
+          <p class="content__text">
+            Bingkai menekankan pentingnya objek-objek yang diletakkan bersama mereka secara 
+            keseluruhan. 
+            Teknik pembingkaian dapat berguna ketika mencoba untuk mengambil sebuah gambar asli dari 
+            sesuatu yang sangat terkenal. Menara Eiffel, sebagai contoh, dapat terlihat lebih 
+            menarik ketika difoto melalui sebuah jendela. Lengkungan, alat pengatur cahaya, pintu, 
+            dan lubang dapat berfungsi sebagai bingkai. 
+            Jika gambarnya sangat menarik perhatian, Anda dapat membuat bingkai lebih tipis. 
+            Di sisi lain, jika Anda hanya mengambil foto langit, bingkai yang lebih tebal 
+            mungkin lebih sesuai.
+          </p>
+
+          <!-- kontainer dengan ilustrasi; sisanya diatur dengan cara yang sama -->
+          <div class="content__image">
+
+            <!-- ilustrasi dengan teks; sisanya diatur dengan cara yang sama -->
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_frame.jpg" alt="" class="content__image-item">
+
+            <!-- area penutup yang akan berada di atas gambar saat kursor diarahkan ke atasnya -->
+            <div class="content__image-cover">
+              <!-- teks untuk keterangan ilustrasi -->
+              <p class="content__image-name">Nighttime Smile, Moskow</p>
+            </div>
+            <!-- ujung area penutup -->
+          </div>
+          <!-- ujung kontainer dengan ilustrasi -->
+
+          <h3 class="content__title content__title_item_method">Kerudung</h3>
+          <p class="content__text">
+            Material setengah-tembus pandang yang diletakkan di bagian latar depan juga dapat menarik perhatian audiens.
+            Efek kabur atau berkabut, misalnya, dapat membantu seniman mengarahkan mata audiens dari 
+            dari depan ke belakang gambar. Bagian gambar yang paling ditekankan saat menggunakan 
+            teknik seperti ini umumnya adalah bagian yang tersembunyi. Sedikit menyembunyikan subjek 
+            menciptakan daya tarik visual, menarik keingintahuan audiens
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_cover.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Bola voli di dalam Hutan, Serebryany Bor</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Indikasi Vektor</h2>
+                    <p class="content__text">
+            Vektor-vektor dalam fotografi berfungsi sebagai pemandu visual untuk mata. Vektor dapat berbentuk garis, atau perbedaan pencahayaan, warna, atau ketajaman. Elemen ini memikat audiens untuk mengamati bagian penting dari foto.
+            Untuk menghasilkan foto yang lebih optimal, terkadang Anda dianjurkan untuk menggunakan dua jenis vektor berbeda yang pada akhirnya akan saling menyamakan level. Dalam kasus ini, audiens akan mengikuti satu vektor sampai akhir sebelum berputar kembali ke awal bersama yang               lain. Perjalanan singkat di sekitar gambar yang menyenangkan ini membawa Anda membuat               serangkaian penemuan menarik selama prosesnya. Vektor-vektor menunjukkan perhatian ke               kumpul atau penyebarannya.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_vector1.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Moskow, Flare</p>
+            </div>
+          </div>
+          <p class="content__text">
+            Salah satu vektor paling efektif yang dapat Anda gunakan adalah vektor yang berfokus 
+            pada arah pandangan seseorang dalam gambar, teknik yang biasa digunakan dalam karya seni 
+            Renaisans. 
+            Dua cahaya yang berpotongan dapat memberi tahu Anda banyak hal tentang hubungan subjek. 
+            Selain itu, titik pertemuan suatu garis juga dapat menunjukkan hal terpenting dalam sebuah gambar. Audiens akan senang mengikuti metode mana pun 
+            dengan senang hati mengikuti metode apa pun yang Anda gunakan untuk memecahkan teka-teki di balik foto Anda.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_vector.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Lapangan Olahraga, Votkinsk</p>
+            </div>
+          </div>
+        </div>
+        <!-- ujung kontainer dengan bab pertama -->
+
+        <!-- kontainer dengan bab kedua -->
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Mengelola Perhitungan</h2>
+          <p class="content__text">
+            Meski terdengar mengejutkan, manusia selalu berhitung di dalam hati dan mencari
+            geometris di sekitar mereka. Menemukan bentuk geometris yang tersembunyi dalam gambar 
+            membuat audiens merasa seperti detektif. Aliran emosi positif ini terasa menggembirakan 
+            dan dapat bertahan lama setelah melihat gambar.
+          </p>
+          <h3 class="content__title content__title_item_method">Segitiga</h3>
+          <p class="content__text">
+            Segitiga terbuat dari elemen-elemen acak yang menonjol. Imajinasi kita bahkan seperti membuat segitiga-segitiga khayalan.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_triangle.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Olahraga Musim Dingin, Stasiun Vesennyaya</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Kurva Kuat</h3>
+          <p class="content__text">Bentuk grafis yang sempurna dari parabola dan hiperbola adalah 
+            mengesankan.</p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_parabola.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Setelah Hujan, Poklonnaya Hill</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Garis Paralel</h3>
+          <p class="content__text">Mereka sangat jarang terjadi di alam sehingga Anda ingin mencari 
+            tahu siapa yang meletakkannya di sana.</p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_parallel.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Metro Sunset, Moskow</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Dekorasi</h3>
+          <p class="content__text">
+            Selalu menyenangkan untuk menemukan dekorasi yang dibuat dari objek serupa.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_ornament.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">September, Moskow</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Ritme</h3>
+          <p class="content__text">
+            Objek identik yang mundur ke latar belakang memungkinkan Anda memperkirakan jarak dan 
+            tinggi. Audiens selalu menghargai hal ini.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_rythm.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Geometry of Space, Sochi</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Bayangan</h3>
+          <p class="content__text">
+            Semua orang suka mencoba untuk mencari tahu bagian mana dari gambar yang merupakan 
+            bayangan. 
+            Menyenangkan sekali di mana ada banyak bayangan-bayangan.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_reflection.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Landmark, Moskow</p>
+            </div>
+          </div>
+        </div>
+        <!-- ujung kontainer dengan bab kedua -->
+
+        <!-- kontainer dengan bab ketiga -->
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Mengelola Emosi</h2>
+          <p class="content__text">
+            Latar belakang emosional terbentuk secara tidak sadar. Jika Anda menganalisis isinya, 
+            warna yang dominan menggunakan sebuah pengaruh psikologi di luar kendali Anda. Fotografer dapat menciptakan 
+            suasana hati tertentu dengan memilih warna dalam foto.
+          </p>
+          <h3 class="content__title content__title_item_method">Merah</h3>
+          <p class="content__text">
+            Warna dari hasrat dan keinginan. Warna merah membawa kesan energi,
+            kekuatan hidup, dan bahaya di saat yang bersamaan.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_red.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Riga Express, Moskow</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Kuning</h3>
+          <p class="content__text">
+            Sebuah warna yang mendorong suasana hati dan nafsu makan. Semua yang berwarna kuning 
+            dengan sebuah senyuman yang mengatakan bahwa hidup itu indah.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_yellow.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Glass Distortion, Izhevsk</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Hijau</h3>
+          <p class="content__text">
+            Warna harmoni dan pertumbuhan. Hijau terang sangat cocok untuk anak-anak yang bermain di 
+            alam, membuat kesan tumbuh dengan aman. Tidak mengagetkan jika tanda untuk jalan terus 
+            adalah lampu hijau.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_green.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Morning Practice, Moskow</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Biru</h3>
+          <p class="content__text">
+            Warna dari kerahasiaan dan kepercayaan. Tidak seperti warna kuning, warna biru menari 
+            diri dari pemirsa, membuat sebuah rasa sedih yang ringan.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_blue.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Bandar Udara, Izhevsk</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Ungu</h3>
+          <p class="content__text">
+            Warna ini menciptakan sebuah kesan kehormatan, kebesaran (terutama dengan nuansa merah 
+            tua), kemandirian, dan kreatifitas.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_violet.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Sunset Port, Novorossiysk</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Putih</h3>
+          <p class="content__text">
+            Warna putih bermakna hal-hal yang berbeda bergantung pada kebudayaan, walaupun ia adalah 
+            warna yang paling sering menggambarkan kebaikan, cahaya, dan kehidupan, termasuk 
+            kehidupan abadi dibalik kubur.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_white.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Winter River, Veretyevo</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Hitam</h3>
+          <p class="content__text">
+            Warna hitam sering kali muncul dengan ide kejahatan dan kematian, walaupun sebagai warna 
+            dari pakaian dan alat-alat elektronika, warna ini lebih sering memberikan sebuah kesan 
+            keteraturan, keanggunan, dan kekuatan misterius.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_black.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Embankment, Moskow</p>
+            </div>
+          </div>
+        </div>
+        <!-- ujung kontainer dengan bab ketiga -->
+
+        <!-- kontainer dengan kesimpulan -->
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Bagikan!</h2>
+          <p class="content__text">
+            Gambar seluler berlipat ganda untuk keseruan — bidikan orisinal yang bagus diikuti oleh 
+            percakapan media sosial yang tak ada habisnya tentangnya.
+          </p>
+
+          <!-- teks kutipan kedua dengan kelas yang sama dengan yang pertama -->
+          <p class="content__quote">
+            "Melukis dengan orang lain lebih baik daripada melukis sendirian - kecemburuan mendorong 
+            Anda untuk berada di antara mereka yang lebih dipuji daripada Anda, pujian orang lain 
+            memacu Anda untuk sementara waktu."
+            <span class="content__quote-origin">Leonardo da Vinci, Sebuah Risalah tentang 
+              Lukisan</span>
+          </p>
+          <p class="content__text">
+            Jangan lupa untuk membagikan pekerjaan Anda karena jumlah suka dan pertanyaan yang Anda 
+            dapatkan akan memberi tahu Anda apa yang Anda lakukan dengan benar. Dan ketika Anda 
+            mendapatkan cukup gambar, Anda dapat kembali melihat gambar-gambar itu dan pelajari 
+            sesuatu yang baru tentang diri Anda. Misalnya, tanyakan pada diri Anda tentang ide-ide 
+            yang Anda miliki yang membuat Anda tertarik. Apa pendapat Anda tentang hal-hal yang Anda 
+            potret? Bagaimana sikap Anda berubah seiring berjalannya waktu, dan bagaimana Anda 
+            sendiri berubah? Anda mungkin menemukan jawabannya dalam pekerjaan Anda.
+          </p>
+        </div>
+        <!-- ujung kontainer dengan kesimpulan -->
+
+        <!-- kontainer dengan informasi tentang penulis dan hak cipta -->
+        <div class="content__item content__item_type_copyright">
+          <!-- teks baris dengan informasi penulis -->
+          <p class="content__text content__text_type_copyright">Gambar: Sergey Nugaev</p>
+          <p class="content__text content__text_type_copyright">Teks: Mikhail Shifrin</p>
+          <p class="content__text content__text_type_copyright">© TripleTen</p>
+        </div>
+        <!-- ujung kontainer dengan informasi tentang penulis dan hak cipta -->
+
+      </div>
+      <!-- ujung kontainer dengan teks dan ilustrasi -->
+    </section>
+    <!-- ujung area konten khusus -->
+  </div>
+  <!-- ujung kontainer untuk semua konten di halaman web -->
+</body>
+</html>

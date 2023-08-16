@@ -1,0 +1,232 @@
+/* di sini, fon dihubungkan menggunakan kaidah @font-face,
+kita akan menjelaskannya secara rinci nanti */
+@font-face {
+    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/fonts/moved_PTMono-Regular.woff);
+    font-family: "PTMono";
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/fonts/moved_Lora-Regular.woff);
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/fonts/moved_PlayfairDisplay-Bold.woff);
+    font-family: "Playfair Display";
+    font-style: bold;
+    font-weight: 700;
+  }
+  
+  /* properti diterapkan ke semua konten yang terlihat di halaman web */
+  .page {
+    background-color: #161819; /* halaman memiliki latar belakang yang gelap */
+    color: white;              /* teks berwarna putih */
+    font-family: 'Lora';        /* kelompok fon adalah 'Lora' kecuali ditentukan lain */
+    padding: 120px 0;            /* padding atas dan bawah diatur ke 120 piksel, dengan padding kiri dan kanan diatur ke 0 */
+  
+  
+    /* di sinilah keajaiban terjadi yang membuat fon
+  kita cantik, kita akan mempelajari lebih lanjut tentang ini nanti */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern";
+  }
+  
+  /* semua konten di halaman web berada di tengah
+  dan menempati 40 persen lebar layar */
+  .content__container {
+    width: 40%;
+    margin: auto;
+  }
+  
+  /* heading halaman utama, serta heading
+  bab dan subheading berbagi fon ini */
+  .content__title {
+    font-family: 'Playfair Display';
+  }
+  
+  /* properti untuk judul halaman */
+  .content__title_item_main {
+    color: #ff6666;
+    font-size: 55px;
+    line-height: 70px;
+    margin-bottom: 60px;
+  }
+  
+  /* properti untuk heading dan subheading bab */
+  .content__title_item_sub {
+    color: #ff6666;
+    font-size: 55px;
+    line-height: 70px;
+    margin: 120px 0 60px;
+    width: 50%;
+  }
+  
+  /* properti untuk subheading bab */
+  .content__title_item_method {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 60px 0 20px;
+  }
+  
+  /* properti untuk paragraf standar */
+  .content__text {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0px;
+  }
+  
+  /* properti untuk kutipan */
+  .content__quote {
+    font-family: 'Lora';
+    font-size: 34px;
+    line-height: 42px;
+    padding: 40px;
+    margin-bottom: 60px;
+    border-top: 2px solid #ff6666;
+    border-bottom: 2px solid #ff6666;
+    position: relative;
+    top: 5px;
+    left: 60px;
+  
+  }
+  
+  /* properti untuk informasi sumber kutipan */
+  .content__quote-origin {
+    display: block;
+    color: #a6a6a6;
+    text-align: right;
+    font-size: 22px;
+    margin-top: 52px;
+    margin-right: -40px;
+  }
+  
+  /* kaidah-kaidah ini untuk menu dan itemnya;
+  kaidah ini harus ditulis secara terpisah karena pemosisan unik mereka */
+  .menu__item {
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .menu__item:hover .menu__picture {
+    display: block;
+  }
+  
+  .menu__item_theme_landscape {
+    top: 40px;
+    left: 40px;
+  }
+  
+  .menu__item_theme_portrait {
+    top: 40px;
+    right: 40px;
+  }
+  
+  .menu__item_theme_viewpoint {
+  bottom: 40px;
+    left: 40px;
+  }
+  
+  .menu__item_theme_expression {
+  bottom: 40px;
+    right: 40px;
+  }
+  
+  /* properti bersama dari semua tautan di halaman ke bagian lain dari halaman */
+  .menu__link {
+    color: #a6a6a6;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'PTMono';
+    text-transform: uppercase;
+  }
+  
+  /* mengubah warna tautan ke bagian lain halaman saat mouse diarahkan ke atasnya */
+  .menu__link:hover {
+     color: #ff6666; 
+  }
+  
+  /* properti bersama dari semua gambar yang muncul di sebelah item menu masing-masing:
+  ini tetap tersembunyi kecuali pengguna berinteraksi dengan item menu */
+  .menu__picture {
+    display: none;
+    width: 300px;
+    position: absolute;
+  }
+  
+  /* kaidah-kaidah ini untuk gambar sembul;
+  kita akan mempelajari cara menulisnya selama bab ini */
+  .menu__picture_theme_landscape {
+    top: 40px;
+    left: 40px;
+  }
+  
+  .menu__picture_theme_portrait {
+  top: 40px;
+    right: 40px;
+  }
+  
+  .menu__picture_theme_viewpoint {
+  bottom: 40px;
+    left: 40px;
+  }
+  
+  .menu__picture_theme_expression {
+  bottom: 40px;
+    right: 40px;
+  }
+  
+  /* properti bersama dari kontainer untuk gambar yang muncul di teks */
+  .content__image {
+    margin: 60px 0;
+    position: relative;
+  }
+  
+  /* properti bersama dari gambar yang muncul di teks */
+  .content__image-item {
+    width: 100%;
+  }
+  
+  /* properti bersama dari "sampul" gambar saat pengguna tidak berinteraksi dengannya */
+  .content__image-cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
+    position: absolute;
+      top: 0px;
+    left: 0px;
+  }
+  
+  /* mengubah properti "sampul" saat mouse diarahkan ke atasnya */
+  .content__image-cover:hover {
+    opacity: 1;
+  }
+  
+  /* properti dari keterangan gambar */
+  .content__image-name {
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  /* properti dari kontainer untuk informasi tentang penulis dan hak cipta */
+  .content__item_type_copyright {
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #a6a6a6;
+  }
+  
+  /* properti teks untuk informasi tentang penulis */
+  .content__text_type_copyright {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
