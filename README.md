@@ -1,2 +1,2 @@
-# belajar-webpro
-Repository untuk menyimpan proses belajar web programming di TripleTen
+# Belajar-Webpro Repository
+Repository untuk menyimpan perjalananku dalam proses belajar web programming
