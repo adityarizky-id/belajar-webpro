@@ -1,0 +1,230 @@
+@keyframes move_bg {
+    from {
+      background-position: 0 0;
+    }
+  
+    to {
+      background-position: 100px 0;
+    }
+  }
+  
+  @keyframes rotation {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg);
+      }
+  } 
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .logo {
+    width: 138px;
+  }
+  
+  .header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+  }
+  
+  .menu__item {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menu__item:last-of-type {
+    margin-right: 0;
+  }
+  
+  .keyframes {
+    background-color: #02B341;
+    color: #fff;
+  }
+  
+  .keyframes__wrapper {
+    width: 490px;
+    margin: auto;
+    padding: 50px 0;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 56px;
+    font-size: 54px;
+  }
+  
+  .subtitle {
+    line-height: 19px;
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    max-width: 350px;
+  }
+  
+  .demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .demo__item {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .demo__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  .demo__item:first-of-type, .demo__item:nth-of-type(2) {
+    margin-top: 0;
+  }
+  
+  .demo__row {
+    height: 64px;
+  }
+  
+  .dotted {
+    background-color: #EB483F;
+    color: white;
+  }
+  
+  .dotted__wrapper {
+    width: 490px;
+    margin: auto;
+    padding: 50px 0;
+    min-height: 350px;
+    position: relative;
+    overflow:hidden;
+  }
+  
+  .animated {
+    width: 490px;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 50%);
+  }
+  
+  .star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .star_size_s {
+    width: 310px;
+    height: 310px;
+    margin-left: -155px;
+    margin-top: -155px;
+    animation-name: rotation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .star_size_l {
+    width: 420px;
+    height: 420px;
+    margin-left: -210px;
+    margin-top: -210px;
+    animation-name: rotation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .star_size_m {
+    width: 420px;
+    height: 420px;
+    margin-left: -210px;
+    margin-top: -210px;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 490px;
+    height: 460px;
+    margin-top: -245px;
+    margin-left: -230px;
+  }
+  
+  .dots_size_s {
+    animation-name: rotation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .dots_size_m {
+    animation-name: rotation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .dots_size_l {
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .demo__row_size_xs {
+    background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/animation_topic/moved_line_xs.svg);
+    animation-name: move_bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  
+  .demo__row_size_s {
+    background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/animation_topic/moved_line_s.svg);
+     animation-name: move_bg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  
+  .demo__row_size_m {
+    background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/animation_topic/moved_line_m.svg);
+     animation-name: move_bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  
+  .demo__row_size_l {
+    background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/animation_topic/moved_line_l.svg);
+     animation-name: move_bg;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+  }
