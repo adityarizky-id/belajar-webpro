@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Pokedex</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="page">
+
+    <div class="header">
+        <h2>Data Trainer</h2>
+        <p>
+            Nama Trainer: <span>Abdul</span>
+        </p>
+        <p>
+            Asal Kota: <span>Kota Palet</span>
+        </p>
+        <div class="header__btn">
+            <button class="btn btn__edit">Edit</button>
+            <button class="btn btn__tambah">Tambah Pokemon</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2 class="card__title">Pokemon</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="image" class="card__img">
+            <p class="card__description">
+                Pokemon description
+            </p>
+        </div>
+
+    </div>
+
+    <div class="popup popup__edit popup--none">
+        <div>
+            <p>Nama Trainer</p>
+            <input type="text">
+        </div>
+
+        <div>
+            <p>Asal Kota</p>
+            <input type="text">
+        </div>
+
+        <div class="mt-1">
+            <button class="btn btn_save-edit">Simpan</button>
+        </div>
+    </div>
+
+    <div class="popup popup__add-pokemon popup--none">
+        <div>
+            <p>Nama Pokemon</p>
+            <input type="text">
+        </div>
+
+        <div>
+            <p>Foto Index Pokemon</p>
+            <input type="number">
+        </div>
+
+        <div>
+            <p>Deskripsi Pokemon</p>
+            <input type="text">
+        </div>
+
+        <div class="mt-1">
+            <button class="btn btn_save-add">Simpan</button>
+        </div>
+    </div>
+</body>
+</html>

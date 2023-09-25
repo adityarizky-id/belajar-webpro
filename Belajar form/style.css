@@ -1,0 +1,402 @@
+/*
+ * Perataan fon untuk seluruh halaman, lihat lebih lanjut mengenai
+ * cara menyesuaikan situs web untuk perangkat
+ */
+
+ .page {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern";
+  }
+  
+  /*
+   * Kita membuat seluruh bagian dalam formulir rata kiri
+   * selaras dengan pemosisian tetap
+   */
+  
+  .form {
+    width: 320px;
+    height: 100vh;
+    background: rgba(255, 255, 255, .95);
+    border-right: 1px solid #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: left .5s;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  
+  /*
+   * Kelas dibuat untuk menganimasikan kolom dengan formulir.
+   * Properti kiri akan berubah dengan halus, menghapus
+   * bagian dari layar pada waktu yang tepat
+   */
+  
+  .form_is-closed {
+    left: -320px;
+  }
+  
+  /* Blok dengan ikon untuk menyembunyikan dan menampilkan bagian yang memiliki formulir */
+  
+  .form__toggle {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .95);
+    position: absolute;
+    top: 0;
+    right: -50px;
+    display: flex;
+    cursor: pointer;
+    transition: opacity .4s;
+  }
+  
+  .form__toggle:hover {
+    opacity: .8;
+  }
+  
+  .form__toggle-image {
+    width: 12px;
+    height: 20px;
+    margin: auto;
+  }
+  
+  /* Merotasi ikon animasi bagian formulir */
+  
+  .form_is-closed .form__toggle-image {
+    transform: rotate(180deg);
+  }
+  
+  /*
+   * Tinggi kontainer dihitung dengan fungsi calc
+   * yang akan kita bahas dalam pelajaran tentang tata letak adaptif dan responsif.
+   * Properti *overflow* mengontrol perilaku kontainer eksternal
+   * jika konten tidak sesuai dengan dimensinya.
+   * Dalam hal ini, bilah gulir vertikal akan muncul.
+   */
+  
+  .form__main-container {
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+  }
+  
+  /* Judul formulir */
+  
+  .form__heading {
+    font-size: 28px;
+    line-height: 32px;
+    width: 240px;
+    margin: 23px auto 0;
+  }
+  
+  .form__heading_type_ctrl-el-heading {
+    margin: 35px auto 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+  
+  /* Formulir itu sendiri */
+  
+  .form__admin {
+    height: 100vh;
+  }
+  
+  /* Gaya untuk semua elemen *fieldset* */
+  
+  .form__input-container {
+    width: 240px;
+    margin: auto;
+    padding-bottom: 50px;
+    border: 0;
+  }
+  
+  /* Garis yang memisahkan *fieldset* */
+  
+  .form__line {
+    height: 1px;
+    background-color: #000;
+  }
+  
+  /* Gaya umum untuk semua label */
+  
+  .form__label {
+    display: block;
+    margin: 35px auto 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  /* Gaya umum untuk semua kolom input */
+  
+  .form__item {
+    border: 0;
+    width: 100%;
+    height: 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #bcbcc4;
+    background-color: transparent;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  
+  /* Mengubah warna garis saat kolom input diaktifkan */
+  .form__item:focus {
+    outline-color: #fff6c5;
+  }
+  
+  /* Gaya *placeholder* */
+  .form__item::placeholder {
+    font-size: 14px;
+    font-family: 'Alegreya Sans';
+    line-height: 20px;
+    color: #bcbcc4;
+  }
+  
+  .form__item::-webkit-input-placeholder {
+    font-size: 14px;
+    font-family: 'Alegreya Sans';
+    line-height: 20px;
+    color: #bcbcc4;
+  }
+  
+  .form__item::-moz-placeholder {
+    font-size: 14px;
+    font-family: 'Alegreya Sans';
+    line-height: 20px;
+    color: #bcbcc4;
+  }
+  
+  .form__item::-ms-input-placeholder {
+    font-size: 14px;
+    font-family: 'Alegreya Sans';
+    line-height: 20px;
+    color: #bcbcc4;
+  }
+  
+  /* Kolom input */
+  
+  .form__item_el_main-text {
+    background: #fff;
+    height: 150px;
+    font-size: 14px;
+    padding: 6px 6px 4px;
+    border: 1px solid #bcbcc4;
+  }
+  
+  
+  .form__item[type="number"] {
+    background-color: white;
+    color: black;
+    border: 1px solid #bcbcc4;
+    padding: 0 4px;
+  }
+  
+  
+  .form__item[type="date"] {
+    background-color: white;
+    color: black;
+    border: 1px solid #bcbcc4;
+    padding: 0 4px;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  
+  
+  .form__item[type="color"] {
+    height: 30px;
+    width: 48px;
+    border-bottom: 0;
+    padding: 0;
+  }
+  
+  
+  .form__item[type="range"] {
+    width: 144px;
+  }
+  
+  
+  /* Kolom daftar drop-down dengan kelas form_item */
+  
+  select.form__item {
+    background-color: white;
+    color: black;
+    border: 1px solid #bcbcc4;
+  }
+  
+  .form__item_el_number-of-columns {
+    position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+  }
+  
+  .form__item_el_number-of-columns:checked + .form__pseudo-item_type_radio {
+    background-image: url('https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_plane.svg');
+  }
+  
+  .form__item_el_number-of-columns:disabled + .form__pseudo-item_type_radio {
+    border: 1px solid gray;
+  }
+  
+  .form__item_el_number-of-columns:focus + .form__pseudo-item_type_radio {
+    box-shadow: 0 0 5px #fff6c5;
+  }
+  
+  .form__item_el_extra-options {
+    position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+  }
+  
+  .form__item_el_extra-options:checked + .form__pseudo-item_type_checkbox {
+    background-image: url('https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_tick.svg');
+  }
+  
+  .form__item_el_extra-options:disabled + .form__pseudo-item_type_checkbox {
+    border: 1px solid gray;
+  }
+  
+  .form__item_el_extra-options:focus + .form__pseudo-item_type_checkbox {
+    box-shadow: 0 0 5px #fff6c5;
+  }
+  
+  .form__pseudo-item {
+    display: inline-block; /* Anda sekarang dapat menentukan lebar dan tinggi dari elemen span */
+    vertical-align: middle; /* Ini akan mengatur perataan vertikal yang tepat untuk elemen dan teks. Properti ini bekerja bersama dengan inline-clock */
+    width: 16px;
+    height: 16px;
+    border: 1px solid black; 
+  }
+  
+  .form__pseudo-item_type_radio {
+    border-radius: 50%;
+  }
+  
+  .form__label_direction_right {
+    display: inline;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+  
+  /* Area untuk tombol, dan tombol */
+  
+  .form__handlers {
+    margin: 0;
+    width: 320px;
+    height: 40px;
+    border: 0;
+    font-size: 0;
+  }
+  
+  /* Gaya umum untuk semua tombol */
+  
+  .form__button {
+    width: 50%;
+    height: 40px;
+    font-size: 14px;
+    border: 0;
+    margin: 0;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: opacity .4s;
+    color: white;
+    font-family: inherit;
+  }
+  
+  .form__button:hover {
+    opacity: .7;
+  }
+  
+  
+  /* Mengubah warna garis saat tombol diaktifkan */
+  .form__button:focus {
+    outline-color: #fff6c5;
+  }
+  
+  .form__button[type="submit"] {
+    background-color: #000;
+  }
+  
+  
+  .form__button[type="reset"] {
+    background-color: #ea3a3a;
+  }
+  
+  /* Gaya halaman */
+  
+  .content {
+    font-family: 'Playfair Display', serif;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  
+  .content__heading {
+    font-size: 55px;
+    width: 523px;
+    margin: auto;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .content__subheading {
+    text-align: center;
+    width: 430px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px auto;
+  }
+  
+  .content__image-item {
+    width: 100%;
+  }
+  
+  .content__image-copyright {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /*
+   * Di sini kita menerapkan dua properti yang baru Anda pelajari:
+   * column-count dan column-gap.
+   * Properti ini memecah teks menjadi kolom.
+   * "column-count: 1" berarti teks satu kolom
+   * "column-gap: 40px" menyatakan jarak yang disarankan antar kolom
+   */
+  
+  .content__text {
+    width: 70%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px auto;
+    column-count: 1;
+    column-gap: 40px;
+  }
+  
+  .content__paragraph {
+    margin: 30px 0;
+  }
+  
+  .content__link {
+    color: black;
+  }
+  
+  .content__date {
+    font-size: 20px;
+    width: 70%;
+    margin: 90px auto 0;
+    text-decoration: underline;
+  }
+  
+  
+  .footer__container {
+    height: 100px;
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tata Letak dan Formulir</title>
+  <link rel="stylesheet" href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+  <div class="page">
+    <section class="form">
+      <div class="form__toggle">
+        <img class="form__toggle-image" src="https://practicum-content.s3.us-west-1.amazonaws.com/html-forms/moved_close_icon.png">
+      </div>
+      <div class="form__container">
+        <form class="form__admin">
+          <div class="form__main-container">
+            <h2 class="form__heading">
+              Pilih pengaturan Anda
+            </h2>
+            <fieldset class="form__input-container form__input-container_ctrl_texts">
+              <label for="heading" class="form__label">Heading</label>
+              <input class="form__item form__item_el_heading" type="text" id="heading" name="heading" placeholder="Judul artikel Anda" required>
+              <label for="subheading" class="form__label">Subheading</label>
+              <input class="form__item form__item_el_subheading" type="text" id="subheading" name="subheading" placeholder="Deskripsi singkat" required>
+              <label for="main-text" class="form__label">Teks utama</label>
+              <textarea class="form__item form__item_el_main-text" id="main-text" name="main-text" placeholder="Masukkan teks utama artikel Anda di sini" required></textarea>
+              <label for="email" class="form__label">E-mail</label>
+              <input class="form__item form__item_el_email" type="email" id="email" name="email" placeholder="hello@example.com">
+          </fieldset>
+            <div class="form__line"></div>
+          <fieldset class="form__input-container form__input-container_ctrl_visual">
+              <label for="font-family" class="form__label">Keluarga fon</label>
+              <select class="form__item form__item_el_font-family" id="font-family" name="font-family">
+                <option value="ibm">IBM Plex Serif</option>
+                <option value="ubuntu">Ubuntu</option>
+                <option value="istok">Istok Web</option>
+              </select>
+              <label for="heading-font-size" class="form__label">Ukuran fon heading</label>
+              <input class="form__item form__item_el_heading-fontsize" type="number" min="24" max="80" id="heading-font-size" name="heading-font-size" value="32">
+              <label for="text-font-size" class="form__label">Ukuran fon teks</label>
+              <input class="form__item form__item_el_text-fontsize" type="number" min="12" max="40" id="text-font-size" name="text-font-size" value="24">
+              <label for="pub-date" class="form__label">Tanggal publikasi</label>
+              <input class="form__item form__item_el_pubdate" type="date" id="pub-date" name="pub-date">
+              <label for="image" class="form__label">Sampul artikel</label>
+              <select class="form__item form__item_el_image" id="image" name="image">
+                <option value="bombardier">Bombardier CS300</option>
+                <option value="hobbit">Hobbit-themed Boeing 777</option>
+                <option value="tiger">Amur Tiger Boeing 747</option>
+              </select>
+          </fieldset>
+          <fieldset class="form__input-container form__input-container_ctrl_additional">
+              <h3 class="form__heading form__heading_type_ctrl-el-heading">Jumlah kolom</h3>
+              <label class="form__label form__label_direction_right" for="one-column"> 
+                  <input class="form__item form__item_el_number-of-columns" type="radio" name="number-of-columns" id="one-column" value="one-column" checked> 
+                  <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                  <span class="form__label-text">1</span>
+               </label>
+              <label class="form__label form__label_direction_right" for="two-columns">
+                  <input class="form__item form__item_el_number-of-columns" type="radio" name="number-of-columns" id="two-columns" value="two-columns">
+                  <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                  <span class="form__label-text">2</span>
+              </label>
+              <label for="text-color" class="form__label">Warna teks</label>
+              <input class="form__item form__item_el_text-color" type="color" id="text-color" name="text-color" value="#979797">
+              <label for="content-width" class="form__label">Lebar konten</label>
+              <input class="form__item form__item_el_content-width" type="range" min="30" max="80" step="10" id="content-width" name="content-width">
+              <h3 class="form__heading form__heading_type_ctrl-el-heading">Pilihan tambahan</h3>
+              <label class="form__label form__label_direction_right" for="black-background">
+                  <input class="form__item form__item_el_extra-options" type="checkbox" name="extra-option" id="black-background" value="black-background">
+                  <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                  <span class="form__label-text">Latar belakang hitam</span>
+              </label>
+            <br>
+              <label class="form__label form__label_direction_right" for="bold-heading">
+                  <input class="form__item form__item_el_extra-options" type="checkbox" name="extra-option" id="bold-heading" value="bold-heading" checked>
+                  <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                  <span class="form__label-text">Judul tebal</span>
+              </label>
+          </fieldset>
+          </div>
+          <fieldset class="form__handlers">
+            <button type="submit" class="form__button">
+              Kirim
+            </button>
+            <button type="reset" class="form__button">
+              Reset
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="content">
+      <div class="content__container">
+        <header class="content__header">
+          <h1 class="content__heading">Gambar Swiss Romandy</h1>
+          <h2 class="content__subheading">Pesawat baru SWISS yang dirancang oleh artis naif Fichtre</h2>
+        </header>
+        <div class="content__image">
+          <img class="content__image-item" src="https://practicum-content.s3.us-west-1.amazonaws.com/html-forms/moved_BOMBARDIER.jpg">
+          <div class="content__image-copyright">
+            Foto oleh
+            <a class="content__link" href="https://www.flickr.com/photos/sloppyperfectionist/35863293766/" target="_blank">
+              Hans-Peter Gauster
+            </a>
+            , "Bombardier CSeries CS300 HB-JCA" © 2017
+            <a class="content__link" href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" target="_blank">
+              CC BY-SA 2.0
+            </a>
+            &nbsp;&nbsp;
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/html-forms/moved_BOMBARDIER_CC.svg" alt="" height="10">
+          </div>
+        </div>
+        <div class="content__text">
+          <p class="content__paragraph">
+            Pada akhir 2016, Swiss International Air Lines (SWISS) menerima pesawat Canadian Bombardier CS3000 pertama mereka untuk
+            penerbangan jarak pendek dan menengah. Untuk memperingati kesempatan ini, seorang seniman dibayar untuk membuat gambar dekorasi istimewa pesawat dengan tujuan
+            memberikan ciri khas pada pesawat terbang dengan 145 kursi tersebut. Hal ini dilakukan dengan syarat bahwa desain yang akan dibuat adalah
+            satu-satunya karya dari sang seniman, dan san seniman secara pribadi akan membantu mengecat badan pesawat itu.
+          </p>
+          <p class="content__paragraph">
+            Proyek tersebut jatuh ke tangan artis naif Mathias Forbach, yang juga dikenal sebagai Fichtre, yang diberi tugas untuk
+            menggabungkan semua hal yang membuat Swiss Romandy luar biasa - pegunungan, danau, anggur, keju, keramahan,
+            dan kebebasan - menjadi sebuah desain. Proyek ini selesai hanya dalam waktu 5 bulan. Dengan senyuman lebar
+            dan atmosfer ramah, pesawat ini tampil seperti penciptanya.
+          </p>
+          <p class="content__paragraph">
+            Pada bulan Mei 2017, Bombardier yang baru selesai diberi nama "Swiss Romandy" dengan nomor registrasi
+            <a class="content__link" href="https://www.flightradar24.com/data/aircraft/hb-jca" target="_blank">
+              HB-JCA
+            </a>
+            . Pesawat ini melayani rata-rata 4 penerbangan komersial sehari dan dapat terlihat di bandara-bandara di seluruh Eropa seperti
+            di Paris, Valencia, Krakow, Berlin, Moskow, Wina, dan Zagreb, serta di Mallorca, Kreta, dan Sisilia.
+            Pesawat Bombardier ini akan tetap memiliki gambar dekorasi istimewa, kecuali jika dibeli oleh perusahaan penerbangan lain.
+          </p>
+        </div>
+        <div class="content__date">10.10.18</div>
+        
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+  </div>
+<script src="script.js"></script>  
+</body>
+</html>
