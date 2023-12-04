@@ -99,6 +99,10 @@ html, body {
     height: 70px;
     display: flex;
   }
+
+  .no-songs_hidden {
+    display: none;
+  }
   
   .no-songs__text {
     margin: auto;
