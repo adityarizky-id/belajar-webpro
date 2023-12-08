@@ -4,7 +4,6 @@ let songsContainer = container.querySelector('.songs-container');
 const addButton = container.querySelector(".form__submit-btn_action_add");
 const resetButton = container.querySelector(".form__submit-btn_action_reset");
 
-let songs = songsContainer.querySelectorAll(".song");
 let noSongsElement = container.querySelector(".no-songs");
 
 function renderAdded() {
@@ -34,6 +33,7 @@ function addSong() {
 
 // Fungsi untuk merender ulang tampilan setelah lagu ditambahkan atau dihapus
 function renderAdded() {
+  let songs = songsContainer.querySelectorAll(".song");
   // Jika tidak ada lagu dalam daftar
   if (songs.length === 0) {
     // Nonaktifkan tombol reset

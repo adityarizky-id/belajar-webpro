@@ -1,0 +1,32 @@
+/* card */
+.card {
+    width: 275px;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card__title {
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__body {
+    border-top: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__star,
+.card__trash {
+    width: 50px;
+    cursor: pointer;
+}
+.card__description {
+    font-weight: bold;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Pokedex</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="page">
+
+    <!-- Header -->
+    <div class="header">
+        <h2>Data Trainer</h2>
+        <p>
+            <i class="fas fa-id-card"></i>  Nama Trainer: <span class="trainer__name">Sammy</span>
+        </p>
+        <p>
+            <i class="fas fa-city"></i> Asal Kota: <span class="trainer__city">Kota Bogor</span>
+        </p>
+        <div class="header__btn">
+            <button class="btn btn__edit">
+                <i class="fas fa-edit"></i> Edit
+            </button>
+            <button class="btn btn__tambah">
+                <i class="fas fa-plus-circle"></i> Tambah Pokemon
+            </button>
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+
+        <template class="my__card">
+            <!-- content nya template my__card -->
+            <div class="card">
+                <h6>pokemon</h6>
+                <h2 class="card__title">Pokemon</h2>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="image" class="card__img">
+                <div class="card__body">
+                    <span class="card__star">
+                        <i class="fa-regular fa-star"></i>
+                        <!-- <span>Anak ke 2</span> -->
+                    </span>
+                    <p class="card__description">
+                        Deskripsi
+                    </p>
+                    <span class="card__trash">
+                        <i class="fa fa-trash card__trash"></i>
+                    </span>
+                    
+                </div>
+            </div>
+        </template>
+        
+    </div>
+
+    <!-- PopUp -->
+    <!-- popup utk edit data trainer -->
+    <div class="popup popup__edit popup--none">
+        <div>
+            <p>Nama Trainer</p>
+            <input type="text" class="input--trainer__name">
+        </div>
+
+        <div>
+            <p>Asal Kota</p>
+            <input type="text" class="input--trainer__city">
+        </div>
+
+        <div class="mt-1">
+            <button class="btn btn_save-edit">Simpan</button>
+        </div>
+    </div>
+
+    <!-- pop up untuk menambahkan pokemon -->
+    <div class="popup popup__add-pokemon popup--none">
+        <div>
+            <p>Nama Pokemon</p>
+            <input type="text" class="input--pokemon-name">
+        </div>
+
+        <div>
+            <p>Foto Index Pokemon</p>
+            <input type="number" class="input--pokemon-idx">
+        </div>
+
+        <div>
+            <p>Deskripsi Pokemon</p>
+            <input type="text" class="input--pokemon-desc">
+        </div>
+
+        <div class="mt-1">
+            <button class="btn btn_save-add">Simpan</button>
+        </div>
+    </div>
+
+    <!-- pop up untuk show image pokemon -->
+    <div class="popup popup__view popup--none">
+        <div>
+            <img width="100%" src="#" class="view__img" alt="">
+        </div>
+        <div>
+            <h4 class="view__name">#</h4>
+            <button class="btn view__btn--close">Close</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- import script -->
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
